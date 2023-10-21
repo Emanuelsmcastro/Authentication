@@ -3,5 +3,5 @@ server:
 
 spring:
   application:
-    name: stateless-auth-api
+    name: stateless-any-api
 
