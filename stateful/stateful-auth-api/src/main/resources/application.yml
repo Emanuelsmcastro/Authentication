@@ -4,4 +4,21 @@ server:
 spring:
   application:
     name: stateful-auth-api
-
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5433}/auth-db
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+    initialization-mode: always
+    initialize: true
+    continue-on-error: true
+    platform: postgresql
+    maxActive: 3
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # Default: none
+      format_sql: true
+    show_sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
