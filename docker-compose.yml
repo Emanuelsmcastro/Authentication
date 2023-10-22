@@ -87,7 +87,7 @@ services:
     container_name: stateful-any-api
     environment:
       PORT: 8083
-      AUTH_BASE_URL: http://stateful-auth-api/8082
+      AUTH_BASE_URL: http://stateful-auth-api:8082
     networks:
       - auth
     ports:
