@@ -46,6 +46,7 @@ services:
       DB_NAME: auth-db
       DB_USER: postgres
       DB_PASSWORD: postgres
+      JWT_SECRET_KEY: YXV0aGVudGljYXRpb24tc3RhdGVsZXNzLXN0YXRlZnVsLW1pY3Jvc2VydmljZS1jb250YWluZXI=
     networks:
       - auth
     ports:
@@ -56,6 +57,7 @@ services:
     container_name: stateless-any-api
     environment:
       PORT: 8081
+      JWT_SECRET_KEY: YXV0aGVudGljYXRpb24tc3RhdGVsZXNzLXN0YXRlZnVsLW1pY3Jvc2VydmljZS1jb250YWluZXI=
     networks:
       - auth
     ports:
@@ -73,6 +75,8 @@ services:
       DB_NAME: auth-db
       DB_USER: postgres
       DB_PASSWORD: postgres
+      REDIS_HOST: token-redis
+      REDIS_PORT: 6379
     networks:
       - auth
     ports:
@@ -83,6 +87,7 @@ services:
     container_name: stateful-any-api
     environment:
       PORT: 8083
+      AUTH_BASE_URL: http://stateful-auth-api/8082
     networks:
       - auth
     ports:
