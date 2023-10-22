@@ -7,4 +7,4 @@ spring:
 
 app:
   client:
-    base-url: ${BASE_URL:http://localhost:AUTH_PORT:8082 }
+    base-url: ${BASE_URL:http://localhost:8082}
