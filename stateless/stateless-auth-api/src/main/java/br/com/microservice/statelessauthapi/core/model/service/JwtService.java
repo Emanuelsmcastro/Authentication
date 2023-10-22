@@ -23,7 +23,7 @@ public class JwtService {
 
     private static final Integer EXPIRATION_TOKEN_IN_HOURS = 24;
     private static final String EMPTY_SPACE = " ";
-    private final Integer TOKEN_INDEX = 1;
+    private static final Integer TOKEN_INDEX = 1;
 
     @Value("${app.token.secret-key}")
     private String secretKey;
