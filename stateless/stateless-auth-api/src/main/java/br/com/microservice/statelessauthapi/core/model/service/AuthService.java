@@ -33,6 +33,8 @@ public class AuthService {
     }
 
     private void validatePassword(String rawPassword, String encodedPassword) {
+        if (ObjectUtils.isEmpty(rawPassword))
+            throw new ValidationException("Empty password.");
         if (!passwordEncoder.matches(rawPassword, encodedPassword))
             throw new ValidationException("Incorrect password.");
     }
