@@ -190,7 +190,7 @@ if __name__ == "__main__":
     remove_remaining_containers()
     threading.Thread(target=docker_compose_up).start()
 ```
-> A função desse script python é acessar os diretórios dos microsserviços e aplicar o build para a criação do .jar utilizando o conceito de threads. Após isso ele derruba o container do projeto e aplica o docker-compose up para a renovação do mesmo contendo as alterações/updates.
+> A função desse script python é acessar os diretórios dos microsserviços e aplicar o build para a criação do .jar utilizando o conceito de threads. Após isso ele derruba o container do projeto e aplica o docker-compose up para a renovação do mesmo, contendo as alterações/updates.
 
 # Como utilizar
 
