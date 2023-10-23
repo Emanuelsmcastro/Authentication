@@ -191,6 +191,19 @@ if __name__ == "__main__":
     threading.Thread(target=docker_compose_up).start()
 ```
 > A função desse script python é acessar os diretórios dos microsserviços e aplicar o build para a criação do .jar utilizando o conceito de threads. Após isso ele derruba o container do projeto e aplica o docker-compose up para a renovação do mesmo contendo as alterações/updates.
->
-> # Como utilizar
-> 
+
+# Como utilizar
+
+Na raiz do projeto digite:
+```shell
+python build.py
+```
+![image](https://github.com/Emanuelsmcastro/Authentication/assets/93106680/02caadc4-7ffd-4ee1-9ac9-724a224680cc)
+
+![image](https://github.com/Emanuelsmcastro/Authentication/assets/93106680/88fd2fc6-8bc0-4113-85d5-b96ab36115ca)
+
+![image](https://github.com/Emanuelsmcastro/Authentication/assets/93106680/54f03eff-b1c2-4090-98be-b8a1bcbb9621)
+
+E para finalizar acesse os microsserviços pelo seguinte endereço: localhost:{microservice_port}/swagger-ui/index.html
+![image](https://github.com/Emanuelsmcastro/Authentication/assets/93106680/eaa16c60-2a16-4b42-b72d-1b113595ab03)
+
