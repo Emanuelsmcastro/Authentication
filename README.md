@@ -204,6 +204,6 @@ python build.py
 
 ![image](https://github.com/Emanuelsmcastro/Authentication/assets/93106680/54f03eff-b1c2-4090-98be-b8a1bcbb9621)
 
-E para finalizar acesse os microsserviços pelo seguinte endereço: localhost:{microservice_port}/swagger-ui/index.html
+E para finalizar, acesse os microsserviços pelo seguinte endereço: localhost:{microservice_port}/swagger-ui/index.html
 ![image](https://github.com/Emanuelsmcastro/Authentication/assets/93106680/eaa16c60-2a16-4b42-b72d-1b113595ab03)
 
